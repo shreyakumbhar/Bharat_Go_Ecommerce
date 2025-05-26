@@ -29,14 +29,14 @@ router.get('/getproducts',async (req,res)=>
 })
 
 
-router.delete('/getprodudctsDetails/:id', async (req, res) => {
+router.get('/getprodudctsDetails/:id', async (req, res) => {
     try {
 
         var id = req.params.id;
         const sql = `select *  from products where id='${id}'`;
-        await connection.execute(sql);
+        const result=await connection.execute(sql);
 
-        return res.status(200).json({ message: 'product data fetched Successfully', success: true })
+        return res.status(200).json({ message: 'product data fetched Successfully', success: true,data:result[0] })
 
     } catch (err) {
 

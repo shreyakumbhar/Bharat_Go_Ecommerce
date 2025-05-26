@@ -1,0 +1,50 @@
+ .address
+{
+    border:2px solid #0AAD0A;
+    border-radius: 5px;
+    background-color: white;
+    color:#0AAD0A
+}
+.address:hover
+{
+    background-color:#0AAD0A;
+    color:white
+}
+.payment p
+{
+    margin-left: 22px;
+    
+}
+.payment label
+{
+    font-weight: 600;
+    
+}
+.payment input
+{
+    margin-right: 20px;
+}
+
+input
+{
+    margin:20px
+}
+.cancel
+{
+    color:#0AAD0A;
+   
+    border: 2px solid #0AAD0A;
+}
+.cancel:hover
+{
+           color:white;
+           background-color: #0AAD0A;
+}
+
+.home .img_box
+{
+    position: absolute;
+    width: 450px;
+    top:15%;
+    padding: 20px;
+}
